@@ -1,0 +1,35 @@
+/* .box1,
+.box2,
+.box3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.box1 {
+  background-color: red;
+  margin-bottom: 10px;
+}
+
+.box2 {
+  background-color: green;
+  margin: 50px 100px  ;
+  padding:  50px 100px;
+}
+.box3 {
+    margin-top: 100px;
+  background-color: black;
+} */
+
+
+/* .main-box .box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 2px;
+} */
+
+/* div .text{
+    background-color: red;
+} */

@@ -1,0 +1,26 @@
+/* .text{
+    color: red;
+} */
+/* 
+.test-text{
+    font-family: sans-serif;
+}
+.test-text .colorfull{
+    color: green;
+}
+
+.text-test .colorfull{
+    color: red;
+} */
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* border: 22px dotted black; */
+    /* border-left: 10px solid blueviolet;
+    border-top: 5px double blue;
+    border-right: 5px double blue;
+    border-bottom: 5px double blue; */
+    
+}

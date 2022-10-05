@@ -1,0 +1,36 @@
+/* h1{
+    color: red;
+    background-color: black;
+} */
+/*this is comment*/
+/* p{ */
+    /* font-size: 20px; */
+    /* font-weight: bolder; */
+    /* font-style: italic; */
+    /* font-family: sans-serif; */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* text-transform: lowercase; */
+    /* line-height: 100px; */
+    /* letter-spacing: 20px; */
+    
+/* } */
+/* span{
+    color: red;
+} */
+
+
+#example1{
+    color: red;
+}
+
+#example2{
+    color: red;
+}
+
+.mytext{
+    color: green;
+}
+
+.test{
+    font-size: 30px;
+}
