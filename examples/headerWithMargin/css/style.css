@@ -3,7 +3,7 @@ header{
     height: 100px;
     background-color: bisque;
 }
-header .logo,header nav, header nav ul li {
+header .logo, header nav, header nav ul li {
     display: inline-block;
 }
 header .logo{
