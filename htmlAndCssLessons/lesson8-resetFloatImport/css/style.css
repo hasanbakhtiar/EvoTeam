@@ -1,0 +1,32 @@
+/* *=all tags */
+/* body,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('reset.css');
+/* @import url('../a/a.css'); */
+
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+} */
+
+
+img{
+    /* float: left; */
+    float: left;
+}
+
+.text{
+    /* clear: right;
+    clear: left; */
+    clear: both;
+}
