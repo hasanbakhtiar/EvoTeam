@@ -1,0 +1,39 @@
+header{
+    width:100% ;
+    height: 118px;
+    border: 1px solid #000;
+    @include center();
+    *{
+        font-family: sans-serif;
+    }
+    .con-header{
+        width: 70%;
+        @include between();
+        nav{
+            width: 50%;
+            ul{
+                width: 100%;
+                @include between();
+            // @extend .con-header;
+            li{
+                a{
+                    color: #000;
+                    font-weight: bolder;
+                    font-size: 20px;
+                }
+            }
+            }
+        }
+        button{
+            width: 194px;
+            height: 70px;
+            border-radius: 50px;
+            border: none;
+            background-color: #f2f4f7;
+            font-weight: bolder;
+            font-size: 20px;
+
+
+        }
+    }
+}
