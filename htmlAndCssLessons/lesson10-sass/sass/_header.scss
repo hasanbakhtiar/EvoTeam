@@ -1,0 +1,17 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    @include between();
+    nav{
+        width: 70%;
+        ul{
+            @include between();
+
+            width: 100%;
+            li{
+                list-style: none;
+            }
+        }
+    }
+}
