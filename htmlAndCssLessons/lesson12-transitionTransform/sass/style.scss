@@ -1,42 +1,38 @@
-.con-box{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .box{
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        // transform: translateX(100px);
-        // transform: translateY(100px);
-        // transform: translate(200px,100px);
-        // transform: scaleX(3);
-        // transform: scaleY(3);
-        // transform: scale(3,2);
-        // transform: skewY(20deg);
-        // transform: skewX(20deg);
-        // transform: skew(20deg,30deg);
-        // transform: rotate(20deg);
-        // matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
-        // transform: matrix(1, -0.3, 0, 1, 240, 0);
+.con-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    // transform: translateX(100px);
+    // transform: translateY(100px);
+    // transform: translate(200px,100px);
+    // transform: scaleX(3);
+    // transform: scaleY(3);
+    // transform: scale(3,2);
+    // transform: skewY(20deg);
+    // transform: skewX(20deg);
+    // transform: skew(20deg,30deg);
+    // transform: rotate(20deg);
+    // matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+    // transform: matrix(1, -0.3, 0, 1, 240, 0);
 
-        // transition-duration:1s ;
-        // transition-property: transform, background-color;
-        // transition-delay: 2s;
+    // transition-duration:1s ;
+    // transition-property: transform, background-color;
+    // transition-delay: 2s;
 
-        // transition: transform 2s, background-color 5s;
-        // transition: 1s;
-        
-        
-        // &:hover{
-        //     background-color: green;
-        //     transform: scale(3);
-        // }
-    }
+    // transition: transform 2s, background-color 5s;
+    // transition: 1s;
 
-    
-    
+    // &:hover{
+    //     background-color: green;
+    //     transform: scale(3);
+    // }
+  }
 }
 // h1::before{
 // content: "World";
@@ -49,36 +45,57 @@
 //     }
 // }
 
-.action{
-    position: relative;
-    width: 100px;
-    height: 300px;
-    background-color: red;
+// .action{
+//     position: relative;
+//     width: 100px;
+//     height: 300px;
+//     background-color: red;
 
-    h1{
-        color: #fff;
-    }
-    &::after{
-        color: #fff;
-        position: absolute;
-        content: "Hello";
-        display: block;
-        background-color: rgba($color: #000000, $alpha: .5);
-        width: 100px;
-        height: 0px;
-        bottom: 0;
-        left: 0;
-        transition: 1s;
-    }
-    &:hover::after{
-        height: 300px;
+//     h1{
+//         color: #fff;
+//     }
+//     &::after{
+//         color: #fff;
+//         position: absolute;
+//         content: "Hello";
+//         display: block;
+//         background-color: rgba($color: #000000, $alpha: .5);
+//         width: 100px;
+//         height: 0px;
+//         bottom: 0;
+//         left: 0;
+//         transition: 1s;
+//     }
+//     &:hover::after{
+//         height: 300px;
 
-    }
+//     }
 
-}
-.other{
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    transform: translate(-100px,200px);
+// }
+// .other{
+//     width: 100px;
+//     height: 100px;
+//     background-color: #000;
+//     transform: translate(-100px,200px);
+// }
+
+.img-box {
+  width: 500px;
+  height: 700px;
+  background-image: url("https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-21.jpg");
+
+  img {
+  transition: 1s;
+    opacity: 1;
+    overflow: hidden;
+
+  }
+  &:hover {
+    img {
+    transform: scale(1.5);
+      transition: 1s;
+      opacity: 0;
+      overflow: hidden;
+    }
+  }
 }

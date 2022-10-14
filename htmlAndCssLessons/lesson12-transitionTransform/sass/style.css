@@ -11,34 +11,19 @@
   background-color: red;
 }
 
-.action {
-  position: relative;
-  width: 100px;
-  height: 300px;
-  background-color: red;
+.img-box {
+  width: 500px;
+  height: 700px;
+  background-image: url("https://glowing.g5plus.net/main/wp-content/uploads/2021/10/banner-21.jpg");
 }
-.action h1 {
-  color: #fff;
-}
-.action::after {
-  color: #fff;
-  position: absolute;
-  content: "Hello";
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100px;
-  height: 0px;
-  bottom: 0;
-  left: 0;
+.img-box img {
   transition: 1s;
+  opacity: 1;
+  overflow: hidden;
 }
-.action:hover::after {
-  height: 300px;
-}
-
-.other {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  transform: translate(-100px, 200px);
+.img-box:hover img {
+  transform: scale(1.5);
+  transition: 1s;
+  opacity: 0;
+  overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
