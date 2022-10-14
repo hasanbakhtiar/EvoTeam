@@ -1,0 +1,44 @@
+.con-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con-box .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.action {
+  position: relative;
+  width: 100px;
+  height: 300px;
+  background-color: red;
+}
+.action h1 {
+  color: #fff;
+}
+.action::after {
+  color: #fff;
+  position: absolute;
+  content: "Hello";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  transition: 1s;
+}
+.action:hover::after {
+  height: 300px;
+}
+
+.other {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  transform: translate(-100px, 200px);
+}/*# sourceMappingURL=style.css.map */
