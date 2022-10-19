@@ -1,0 +1,78 @@
+// .box{
+//     position: relative;
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     animation-name: hoppo;
+//     animation-duration: 5s;
+//     animation-iteration-count: infinite;
+// }
+// @keyframes hoppo {
+//         // from{left: 0;}
+//         // to{left: 100px;}
+
+//         0%{left: 0; top: 0; background-color: red;}
+//         25%{left: 300px; top: 0; background-color:green;}
+//         50%{left: 300px; top: 300px; background-color:orange;}
+//         75%{left: 0px; top: 300px; background-color:yellow;}
+//         100%{left: 0px; top: 0px; background-color:rgb(0, 35, 233);}
+// }
+
+// p {
+//   font-size: 30px;
+//   border: 3px solid #000;
+//   width: 15%;
+//   animation: danger 4s infinite;
+// }
+// @keyframes danger {
+//   0% {
+//     font-size: 30px;
+//     border: 3px solid #000;
+//     width: 15%;
+//   }
+//   50%{
+//     color: red;
+//     font-size: 70px;
+//     border: 3px solid red;
+//     width: 40%;
+//     padding: 50px 150px; 
+//     background-color: #000;
+//     border-radius: 100px;
+
+//   }
+//   100% {
+//     font-size: 30px;
+//     border: 3px solid #000;
+//     width: 15%;
+//     padding: 0px;
+
+//   }
+// }
+
+// .cut{
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+//     // clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+//     clip-path: circle(50% at 50% 19%);
+
+// }
+
+.cycle{
+    width: 400px;
+    height: 400px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    animation: rotateSystem 2s infinite ;
+    animation-timing-function: linear;
+    @keyframes rotateSystem {
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+    }
+    .fake-earth{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border-radius: 50%;
+    }
+}

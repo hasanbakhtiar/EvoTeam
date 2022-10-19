@@ -1,0 +1,57 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav{
+        width: 70%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+// max -> sifirdan verilen deyere qederi deyisir
+// min -> sonsuzluqdan verilen deyere qederi deyisir
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {...}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {...}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
+@media (max-width:700px){
+    header{
+        background-color: red;
+
+    }
+}
+
+@media (max-width:500px){
+    header{
+        background-color: green;
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+}

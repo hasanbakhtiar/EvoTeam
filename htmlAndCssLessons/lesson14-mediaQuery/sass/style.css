@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav {
+  width: 70%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  header {
+    background-color: red;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background-color: green;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
