@@ -1,0 +1,43 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  background-color: #002745;
+}
+.hero .hero-con {
+  height: auto;
+}
+.hero .hero-con .right-text {
+  height: 45vh;
+}
+.hero .hero-con .right-text *:not(input) {
+  color: #fff;
+}
+.hero .hero-con .right-text h1 {
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.info {
+  color: red;
+}
+.info::after, .info::before {
+  content: "";
+  transform: rotate(90deg);
+  width: 0px;
+  height: 3px;
+  background-color: black;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+.info:hover::after, .info:hover::before {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */

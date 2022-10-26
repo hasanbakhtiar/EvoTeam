@@ -1,0 +1,46 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+ .hero{
+    width: 100%;
+    height: auto;
+    background-color: #002745;
+    .hero-con{
+
+        height: auto;
+        .right-text{
+            height: 45vh;
+            *:not(input){
+                color: #fff;
+            }
+            h1{
+                font-size: 70px;
+                font-family: sans-serif;
+                font-weight: bolder;
+    
+            }
+        }
+    }
+ }
+
+ .info{
+    color: red;
+    &::after, &::before{
+        content: "";
+        transform: rotate(90deg);
+        width: 0px;
+        height: 3px;
+        background-color: black;
+        display: inline-block;
+        margin-bottom: 10px;
+        transition: 1s;
+    }
+    &:hover::after,&:hover::before{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        
+    }
+    
+ }
