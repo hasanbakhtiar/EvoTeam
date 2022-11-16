@@ -1,0 +1,46 @@
+@media (max-width:924px) {
+    header{
+        .con-header{
+            nav{
+                display: none;
+            }
+        }
+    }
+
+    .hero{
+        height: auto;
+        .con-hero{
+            height: auto;
+            flex-direction: column;
+            .left{
+                width: 100%;
+                h1{
+                    font-size: 34px;
+                }
+                .btns{
+                    button{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .right{
+                display: none;
+            }
+        }
+    }
+
+    .design{
+        height: auto;
+        .con-head-text{
+            height: auto;
+        }
+        .con-design-cards{
+            height: auto;
+            flex-direction: column;
+            .con-card{
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}

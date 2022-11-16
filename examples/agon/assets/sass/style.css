@@ -149,4 +149,43 @@ header .con-header button {
   background-color: #f2f4f7;
   font-weight: bolder;
   font-size: 20px;
+}
+
+@media (max-width: 924px) {
+  header .con-header nav {
+    display: none;
+  }
+  .hero {
+    height: auto;
+  }
+  .hero .con-hero {
+    height: auto;
+    flex-direction: column;
+  }
+  .hero .con-hero .left {
+    width: 100%;
+  }
+  .hero .con-hero .left h1 {
+    font-size: 34px;
+  }
+  .hero .con-hero .left .btns button {
+    margin-bottom: 20px;
+  }
+  .hero .con-hero .right {
+    display: none;
+  }
+  .design {
+    height: auto;
+  }
+  .design .con-head-text {
+    height: auto;
+  }
+  .design .con-design-cards {
+    height: auto;
+    flex-direction: column;
+  }
+  .design .con-design-cards .con-card {
+    width: 100%;
+    margin-top: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
