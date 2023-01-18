@@ -6,7 +6,7 @@ class Nav extends Component {
     return (
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">Logo</Link>
+                <Link className="navbar-brand" to="/">Best Shop</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
                 </button>
@@ -17,6 +17,9 @@ class Nav extends Component {
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/about">About</NavLink>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink className="nav-link" to="/products">Products</NavLink>
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" to="/contact">Contact</NavLink>

@@ -4,7 +4,10 @@ import Nav from '../components/Nav'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
-
+import Footer from '../components/Footer'
+import Products from '../pages/Products'
+import NotFoundPage from '../pages/NotFoundPage'
+// npm i react-router-dom 
 class AppRouter extends Component {
   render() {
     return (
@@ -14,9 +17,12 @@ class AppRouter extends Component {
         <Routes>
             <Route path='/' element={<Home/>}></Route>
             <Route path='/about' element={<About/>}></Route>
+            <Route path='/products' element={<Products/>}></Route>
             <Route path='/contact' element={<Contact/>}></Route>
+            <Route path='*' element={<NotFoundPage/>}></Route>
         </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     )
   }
