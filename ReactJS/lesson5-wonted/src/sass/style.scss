@@ -1,0 +1,93 @@
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: #f5ebe6;
+}
+.circle{ 
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid bisque;
+}
+.x1{
+    right: 100px;
+    animation: cycleactionx1 4s infinite linear;
+}
+
+.x2{
+    top: 100px;
+    right: 300px;
+    animation: cycleactionx2 4s infinite linear;
+
+}
+.x3{
+    top: 300px;
+    right: 500px;
+    animation: cycleactionx3 4s infinite linear;
+
+}
+.x4{
+    top: 500px;
+    right: 700px;
+    animation: cycleactionx4 4s infinite linear;
+
+}
+.x5{
+    right: 100px;
+    top: 300px;
+    animation: cycleactionx5 4s infinite linear;
+
+}
+
+@keyframes cycleactionx1 {
+    0%{
+        right: 100px;
+    }
+    100%{
+        right: 400px;
+
+    }
+}
+
+@keyframes cycleactionx2 {
+    0%{
+        right: 100px;
+    }
+    100%{
+        right: 700px;
+
+    }
+}
+
+@keyframes cycleactionx3 {
+    0%{
+        right: 100px;
+    }
+    100%{
+        right: 1000px;
+
+    }
+}
+
+@keyframes cycleactionx4 {
+    0%{
+        right: 100px;
+    }
+    100%{
+        right: 1200px;
+
+    }
+}
+
+@keyframes cycleactionx5 {
+    0%{
+        right: 100px;
+    }
+    100%{
+        right: 400px;
+
+    }
+}
