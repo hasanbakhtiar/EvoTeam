@@ -1,12 +1,12 @@
 import React from 'react'
 
-const DashboardItem = () => {
+const DashboardItem = ({count,photo,title,desc}) => {
   return (
     <tr>
-    <td>1</td>
-    <td><img src="" alt="" /></td>
-    <td>Otto</td>
-    <td>@mdo</td>
+    <td>{count}</td>
+    <td><img width={100} src={photo} alt="" /></td>
+    <td>{title}</td>
+    <td>{desc}</td>
   </tr>
   )
 }
