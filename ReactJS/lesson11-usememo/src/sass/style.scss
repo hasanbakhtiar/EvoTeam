@@ -1,0 +1,13 @@
+*{
+    background-color: #333;
+    color: #fff;
+}
+input{
+    background-color: #fff;
+    color: #333;
+}
+li{
+    &:hover{
+        cursor: pointer;
+    }
+}
