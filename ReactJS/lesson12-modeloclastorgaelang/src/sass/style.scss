@@ -1,0 +1,30 @@
+
+@import 'light';
+@import 'dark';
+.box{
+    width: 100px;
+    height: 100px;
+}
+.slick-prev {
+  width: 50px;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  height: 50px;
+  background: tomato;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.slick-next {
+  width: 50px;
+  right: 0;
+  top: 50%;
+  position: absolute;
+  height: 50px;
+  background: tomato;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
