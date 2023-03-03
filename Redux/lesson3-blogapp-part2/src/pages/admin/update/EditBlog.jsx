@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap'
 import React from 'react'
 import { connect, useDispatch } from 'react-redux'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import BlogForm from '../../../components/BlogForm'
 import { editBlog, removeBlog } from '../../../myredux/actions/blogaction'
 
@@ -27,9 +27,9 @@ const EditBlog = props => {
 }
 
 const MapStateToProps=(state)=>{
-    const {id} = useParams();
+    const link = window.location.pathname.slice(6,99);
     return({
-        pvalue:state.find(p=>p.id === id)
+        pvalue:state.find(p=>p.id ===link)
     })
 }
 
