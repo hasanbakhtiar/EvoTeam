@@ -1,6 +1,6 @@
 import React, { FormEventHandler, useState } from "react";
 import { Button, Col, Form, InputGroup, ListGroup } from "react-bootstrap";
-import { add } from "./features/todoSlice";
+import { add, remove } from "./features/todoSlice";
 import { useAppDispatch, useAppSelector } from "./store";
 
 const App = () => {
@@ -21,13 +21,13 @@ const App = () => {
         <Col className="col-4">
           <form onSubmit={todoSubmit}>
             <InputGroup className="mb-3">
-              <Form.Control placeholder="add todo" onChange={(e)=>{setTitle(e.target.value)}} />
-              <Button variant="secondary">Add</Button>
+              <Form.Control value={title} placeholder="add todo" onChange={(e)=>{setTitle(e.target.value)}} />
+              <Button variant="secondary" type="submit">Add</Button>
             </InputGroup>
           </form>
           <ListGroup>
             {selectTodos.map((item:any)=>(
-                    <ListGroup.Item>{item.title}</ListGroup.Item>
+                    <ListGroup.Item className="d-flex justify-content-between">{item.title}<Button variant="danger" onClick={()=>{dispatch(remove(item.id));}}>Del</Button></ListGroup.Item>
             ))}
           </ListGroup>
         </Col>
