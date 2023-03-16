@@ -11,11 +11,17 @@ const App = () => {
                 {id:Date.now().toString(), text:text}
             ])
     };
+    const todoDeleteHandler =(todoId:string)=>{
+      setTodos((prevTodo)=>{
+        return prevTodo.filter((todo)=>
+        todo.id !== todoId)
+      })
+    }
     
   return (
     <div className='App'>
         <NewTodo onAddTodo={todoAddHandler}/>
-        <TodoList items={todos}/>
+        <TodoList items={todos} ondeleteTodo={todoDeleteHandler}/>
 
     
     </div>
