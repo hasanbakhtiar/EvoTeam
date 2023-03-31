@@ -1,0 +1,46 @@
+// $defaultWidth: 20%;
+// $defaultHeight:50vh;
+
+
+
+// @for $i from 1 through 10 {
+//   li:nth-child(3n + #{$i}) {
+//     background-color: lighten(#036, $i * 5%);
+//   }
+// }
+
+
+
+
+// @use 'mixin' as a;
+
+
+// $base-color: green;
+
+
+
+
+// @if($base-color == red){
+//     @for $i from 1 through 10 {
+//         .text:nth-child(3n + #{$i}) {
+//        background-color: lighten($base-color, $i * 5%);
+//      } 
+//    } 
+// }@else if($base-color == green){
+//     @for $i from 1 through 3 {
+//         .text:nth-child(3n + #{$i}) {
+//        background-color: lighten($base-color, $i * 5%);
+//      } 
+//    } 
+// }@else{
+//     @for $i from 1 through 10 {
+//         .text:nth-child(3n + #{$i}) {
+//        background-color: lighten($base-color, $i * 5%);
+//      } 
+//    } 
+// }
+
+// .text{
+// @include a.testOne()
+// }
+
